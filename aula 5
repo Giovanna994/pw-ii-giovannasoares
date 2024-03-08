@@ -1,0 +1,49 @@
+<?php   
+       /*
+        $mes = 2;
+
+        switch($mes){
+            case 1:
+                echo "Janeiro";
+                break;
+            case 2:
+                echo "Fevereiro";
+                break;
+            case 3:
+                echo "Março";
+                break;
+            case 4:
+                echo "Abril";
+                break;
+            default:
+                echo "Número do mês inválido";                
+        }
+        */
+       
+        $mes = 7;
+
+        switch($mes){
+            case 1:
+            case 2:        
+            case 3:
+                echo "1º Trimestre";
+                break;
+            case 4:
+            case 5:        
+            case 6:
+                echo "2º Trimestre";
+                break;
+            case 7:
+            case 8:        
+            case 9:
+                echo "3º Trimestre";
+                break;
+            case 10:
+            case 11:        
+            case 12:
+                echo "4º Trimestre";
+                break;
+            default:
+                echo "Número do mês inválido";
+        }
+    ?>
