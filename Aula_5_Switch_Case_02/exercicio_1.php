@@ -1,5 +1,15 @@
-$mes=8;
-switch($mes){
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <?php
+    $mes=8;
+    switch($mes){
 
     case 1:
     case 2:
@@ -27,5 +37,8 @@ switch($mes){
 
     default:     
         echo "Número de mês invalido.";   
-}
-?>
+    }
+    ?>
+    
+</body>
+</html>
