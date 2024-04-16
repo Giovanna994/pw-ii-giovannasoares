@@ -1,0 +1,31 @@
+ /* 
+    http://localhost/phpmyadmin
+
+    criar banco: bdPw2
+
+    create table tbContato(
+	idContato int PRIMARY KEY AUTO_INCREMENT,
+    nome varchar(50),
+    email varchar(50),
+    assunto varchar(100),
+    mensagem varchar(2000)
+    );
+
+    insert into tbContato values(
+	null,
+	'Maria dos Santos',
+    'maria@gmail.com',
+	'Assunto da maria',
+    'msg da maria'
+    );
+
+    insert into tbContato values(
+	null,
+	'João Cereto',
+   'joão@gmail.com',
+	'Assunto do João',
+   'msg do joao'
+    );
+
+    select * from tbContato;
+    */
