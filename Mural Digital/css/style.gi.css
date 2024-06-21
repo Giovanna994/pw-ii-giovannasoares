@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  a {
+    transition: .3s;
+  }
+
+  a:hover,
+  a:active,
+  a:focus {
+    outline: none;
+    text-decoration: none;
+  }
+
+  .footer {
+    position: relative;
+    padding-top: 45px;
+    background: #f3f3f3;
+  }
+
+  .footer .footer-blog,
+  .footer .footer-insta,
+  .footer .footer-tags,
+  .footer .footer-newsletter {
+    position: relative;
+    margin-bottom: 45px;
+  }
+  
+  .footer .footer-blog h3,
+  .footer .footer-insta h3,
+  .footer .footer-tags h3,
+  .footer .footer-newsletter h3 {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  .footer .footer-blog h3::after,
+  .footer .footer-insta h3::after,
+  .footer .footer-tags h3::after,
+  .footer .footer-newsletter h3::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #000000;
+  }
+  
+  .footer .footer-blog div a {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .footer .copyright {
+    position: relative;
+    padding: 30px 0;
+    background: #e7e7e7;
+  }
+  
+  .footer .copyright .copy-text p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  .footer .copyright .copy-text p a {
+    color: #000000;
+  }
+
+  .footer .copyright .copy-menu {
+    position: relative;
+    font-size: 0;
+    text-align: right;
+  }
+  
+  .footer .copyright .copy-menu a {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #000000;
+  }

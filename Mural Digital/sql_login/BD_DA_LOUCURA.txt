@@ -1,0 +1,37 @@
+create database login;
+use database login;
+
+CREATE TABLE `usuarios` (
+  `ID` int(11) NOT NULL,
+  `nome` varchar(250) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `senha` varchar(7) NOT NULL,
+  PRIMARY KEY (ID)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+	INSERT INTO `usuarios` (`ID`, `nome`, `email`, `senha`) VALUES
+	(default, 'GiovannaCoppola', 'giovannacoppola@teste.com', '123'),
+	(default, 'Carla', 'carla@teste.com', '456'),
+	(default, 'GiovannaSousa', 'giovannasousa@teste.com', '789');
+
+CREATE TABLE `contatos` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(200) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `assunto` varchar(200) NOT NULL,
+  `mensagem` varchar(1000) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+	INSERT INTO `contatos` (`id`, `nome`, `email`, `assunto`, `mensagem`) VALUES
+	(default, 'GiovannaCoppola', 'giovannacoppola@teste.com', 'Título Teste', 'Mensagem teste, puro suco do teste'),
+	(default, 'Carla', 'carla@teste.com', 'Teste de Assunto', 'É só um teste, então bora testar'),
+	(default, 'GiovannaSousa', 'giovannasousa@teste.com', 'Esse treco ta dando muito trabalho', 'QUERO MBBB, TO FICANDO LOUCAAAAA');
+
+CREATE TABLE `anuncios` (
+  `id` int(11) NOT NULL,
+  `titulo` varchar(100) DEFAULT NULL,
+  `descricao` varchar(225) DEFAULT NULL,
+  `imagem` blob DEFAULT NULL,
+  `periodo_duracao_anuncio` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `ativo` enum('s','n') DEFAULT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
